@@ -1,0 +1,61 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+input, select {
+  padding: 10px;
+  flex: 1;
+}
+
+.task {
+  background: #eee;
+  margin-top: 6px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.dark .task {
+  background: #333;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

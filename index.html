@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart To-Do Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Smart To-Do Pro</h1>
+<div class="buttons">
+  <button onclick="toggleDark()">🌙 Mode</button>
+
+  
+    <button onclick="showList()">List view</button>
+    <button onclick="showCalendar()">Calendar view</button>
+  </div>
+
+  <!-- FORM -->
+  <div class="task-form">
+    <input type="text" id="taskName" placeholder="enter your Task">
+
+    <select id="taskCategory">
+      <option>Personal</option>
+      <option>Work/School</option>
+      <option>Family/Home</option>
+      <option>Health/Fitness</option>
+      <option>Shopping/Errands</option>
+      <option>Project/Goals</option>
+      <option>Social/Events/Fun</option>
+    </select>
+
+    <input type="time" id="taskTime">
+
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="startVoice()">🎤</button>
+  </div>
+
+  <input type="text" id="search" placeholder="Search..." oninput="renderTasks()">
+
+  <div id="listView"></div>
+  <div id="calendarView" style="display:none;"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
